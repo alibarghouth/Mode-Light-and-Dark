@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --text-color:#000;
+    --body-color:#fff;
+}
+body.dark-mode{
+    --text-color:#fff;
+    --body-color:#000;
+}
+body{
+    background-color: var(--body-color);
+    color: var(--text-color);
+    height: 100vh;
+}
+
+header i{
+    margin: 10px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 35px;
+    cursor: pointer;
+}
+.section .contaner {
+    display: flex;
+    flex-direction: row-reverse;
+    width:100%;
+    margin-top: 100px;
+}
+.section .contaner img{
+    width: 90%;
+}
+.section .contaner .btn{
+    width: 100%;
+    padding: 20px;
+    margin: 20px;
+}
+.section .contaner .btn h2{
+    margin:50px 0 30px ;
+    text-transform: capitalize;
+    font-size: 40px;
+    font-weight: bold;
+}
+.section .contaner .btn p{
+    width: 480px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+.section .contaner .btn span{
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.section .contaner .btn button{
+    background-color: red;
+    padding: 20px;
+    border-radius: 10px;
+}
+.section .contaner .btn button a{
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+}
+@media (max-width:1041px){
+    .section .contaner {
+        flex-direction: column;
+    }
+}
